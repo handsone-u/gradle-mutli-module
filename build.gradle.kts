@@ -5,6 +5,11 @@ plugins {
     kotlin("plugin.spring") version "2.2.10" apply false
 }
 
+subprojects {
+    apply(plugin = "buildsrc.convention.kotlin-jvm")
+}
+
+
 allprojects {
     repositories {
         mavenCentral()
