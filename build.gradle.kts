@@ -7,6 +7,7 @@ plugins {
 
 subprojects {
     apply(plugin = "buildsrc.convention.kotlin-jvm")
+    apply(plugin = "buildsrc.convention.java-jvm")
 }
 
 
