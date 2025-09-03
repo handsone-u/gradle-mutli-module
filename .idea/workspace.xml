@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569e164f-b879-4631-b427-ccd9489f0eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/java/java-jvm.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-domain/src/main/java/io/handsone/domain/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-domain/src/main/java/io/handsone/domain/entity/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/io/handsone/core/CoreApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/io/handsone/core/CoreApplicationTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core-domain/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +28,17 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/core">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/core">
           <activation />
         </task>
         <projects_view>
@@ -91,21 +103,73 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build core.executor": "Run",
     "Gradle.Build multimodule.executor": "Run",
+    "Gradle.multimodule [bootRun].executor": "Run",
+    "Gradle.multimodule [build].executor": "Run",
     "Gradle.multimodule [run].executor": "Run",
     "Gradle.multimodule:core-java [:core-java:io.handsone.Main.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.CoreApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "onboarding.tips.debug.path": "/Users/handsone/Desktop/project/multimodule/core-java/src/main/java/io/handsone/Main.java",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
+    "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.CoreApplication">
+    <configuration name="multimodule [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="multimodule [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="multimodule [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -128,9 +192,25 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="CoreApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="multimodule.core.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.handsone.core.CoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="multimodule.core.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.handsone.core.CoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.multimodule [bootRun]" />
         <item itemvalue="Gradle.multimodule [run]" />
+        <item itemvalue="Gradle.multimodule [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +229,7 @@
       <option name="presentableId" value="Default" />
       <updated>1756818860907</updated>
       <workItem from="1756818861914" duration="4654000" />
-      <workItem from="1756870478019" duration="3453000" />
+      <workItem from="1756870478019" duration="5502000" />
     </task>
     <servers />
   </component>
@@ -163,5 +243,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

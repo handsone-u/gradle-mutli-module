@@ -11,10 +11,18 @@ dependencyResolutionManagement {
     }
 }
 
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
 plugins {
     // Use the Foojay Toolchains plugin to automatically download JDKs required by subprojects.
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
+
 
 // Include the `app` and `utils` subprojects in the build.
 // If there are changes in only one of the projects, Gradle will rebuild only the one that has changed.
@@ -22,5 +30,6 @@ plugins {
 include(":app")
 include(":utils")
 include(":core-domain")
+include(":core")
 
 rootProject.name = "multimodule"

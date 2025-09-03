@@ -1,13 +1,11 @@
 plugins {
-    id("org.springframework.boot")
-    id("io.spring.dependency-management")
 }
 
 group = "io.handsone"
 version = "unspecified"
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("jakarta.persistence:jakarta.persistence-api:3.2.0")
 
     compileOnly("org.projectlombok:lombok:1.18.38")
     annotationProcessor("org.projectlombok:lombok:1.18.38")
