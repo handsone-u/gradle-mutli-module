@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569e164f-b879-4631-b427-ccd9489f0eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/io/handsone/core/CoreApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/io/handsone/core/CoreApplicationTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/io/handsone/core/repository/MemberRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core-domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/io/handsone/core/CoreApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/io/handsone/core/CoreApplication.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +66,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -229,7 +222,7 @@
       <option name="presentableId" value="Default" />
       <updated>1756818860907</updated>
       <workItem from="1756818861914" duration="4654000" />
-      <workItem from="1756870478019" duration="5502000" />
+      <workItem from="1756870478019" duration="6156000" />
     </task>
     <servers />
   </component>
