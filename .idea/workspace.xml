@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569e164f-b879-4631-b427-ccd9489f0eb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/io/handsone/core/controller/HomeController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/io/handsone/core/repository/repositories.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,23 +69,28 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "handsone-u"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;handsone-u&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/handsone-u/gradle-mutli-module.git",
-    "accountId": "cc94c4f7-ba00-4847-866b-ab092cde1db9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/handsone-u/gradle-mutli-module.git&quot;,
+    &quot;accountId&quot;: &quot;cc94c4f7-ba00-4847-866b-ab092cde1db9&quot;
   }
+}</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
 }]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -97,6 +102,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Dockerfile builder.executor": "Run",
+    "Docker.Dockerfile runner.executor": "Run",
     "Gradle.Build core.executor": "Run",
     "Gradle.Build multimodule.executor": "Run",
     "Gradle.multimodule [bootRun].executor": "Run",
@@ -119,7 +126,7 @@
     "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.CoreApplication">
+  <component name="RunManager" selected="Docker.Dockerfile builder">
     <configuration name="multimodule [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -200,8 +207,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile builder" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="openjdk21-jdk-slim_builder" />
+          <option name="buildCliOptions" value="--target builder" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile runner" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="openjdk17-alpine_runner" />
+          <option name="buildCliOptions" value="--target runner" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile builder" />
+        <item itemvalue="Docker.Dockerfile runner" />
         <item itemvalue="Gradle.multimodule [bootRun]" />
         <item itemvalue="Gradle.multimodule [run]" />
         <item itemvalue="Gradle.multimodule [build]" />
@@ -223,7 +257,9 @@
       <option name="presentableId" value="Default" />
       <updated>1756818860907</updated>
       <workItem from="1756818861914" duration="4654000" />
-      <workItem from="1756870478019" duration="6629000" />
+      <workItem from="1756870478019" duration="6719000" />
+      <workItem from="1756881660715" duration="973000" />
+      <workItem from="1756960637566" duration="3196000" />
     </task>
     <servers />
   </component>
